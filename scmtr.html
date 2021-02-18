@@ -1,0 +1,29 @@
+<html>
+    <head>
+        
+        <script>
+            function myfunc()
+            {
+            var sc= document.getElementById("score").value;
+            var res= new Array();
+            res = sc.split(',');
+            var i=0;
+            var j=0;
+            var i = parseInt(res[0]) * 1 + parseInt(res[1]) * 2 + parseInt(res[2]) * 3 + parseInt(res[3]) * 4 + parseInt(res[4]) * 6;
+            document.getElementById("dem").innerHTML = i;
+            }
+        </script>
+    </head>
+    <body bgcolor="pink" >
+        <center>
+            
+            <h3><strong>SCORE METER</strong></h3><br><br>
+            <p><strong>(Enter the number of singles, double, triple, fours and sixes in comma seperated format.)</strong></p><br><br><br><br>
+            <h5>ENTER THE SCORE DETAILS:</h5>
+            <input type="text" id="score" name="score"><br><br>
+            <input type="submit" onclick="myfunc()">
+
+            <h4>Total Score:</h4><p id="dem"></p>
+        </center>
+    </body>
+</html>
